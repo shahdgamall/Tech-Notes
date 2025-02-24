@@ -9,7 +9,7 @@ A **router** connects different networks, like your home network to the internet
 ✅ **Uses NAT to translate private ↔ public IPs**  
 ✅ **Provides security features (firewall, encryption, etc.)**
 
-### **🛜 Example:**
+### **🛜 Example :**  
 
 - Your **Wi-Fi router at home** assigns local IPs (`192.168.1.x`) and connects all your devices to the internet.
 - When your laptop wants to access `google.com`, the router sends the request through the ISP.
