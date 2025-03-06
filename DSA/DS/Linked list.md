@@ -102,6 +102,26 @@ int len()
 - If a match is found, a Boolean true (or 1) is returned.
 - If the entire list is traversed without finding the element, false (or 0) is returned.
 - Time complexity: O(n) in the worst case (element not found or at the end), O(1) in the best case (element is the head), and O(n/2) on average.
+```c++
+bool searchElement(Node* head, int targetValue){
+    // Start from the head of the list
+    Node* currentNode = head;
+
+    // Traverse the list as long as the current node is not null
+    while (currentNode != nullptr) {
+        // Check if the data in the current node matches the target value
+        if (currentNode->data == targetValue) {
+            // Element found, return true
+            return true;
+        }
+        // Move to the next node in the list
+        currentNode = currentNode->next;
+    }
+
+    // If the loop completes without finding the element, it's not present
+    return false;
+}
+```
 ### deletion and insertion:
 #### Deletion of the Head:
 - To delete the head, the head pointer needs to be moved to the next node.
